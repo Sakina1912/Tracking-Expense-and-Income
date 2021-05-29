@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- style sheet  -->
+    <link rel="stylesheet" href="/style.css">
+    <!-- google fonts link  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <title>Track your expense and income</title>
+</head>
+<body>
+    <h1>Track your Expense and Income</h1>
+    <div class="container">
+        <h4>Balance</h4>
+        <h1 id="balance">&#8377;0.00</h1>
+        <div class="inc-exp-container">
+            <div>
+                <h4>Income</h4>
+                <p id="money-plus" class="money-plus">+&#8377;0.00</p>
+            </div>
+            <div>
+                <h4>Expense</h4>
+                <p id="money-minus" class="money-minus">-&#8377;0.00</p>
+            </div>
+        </div>
+
+        <h3>History</h3>
+        <ul class="list" id="list">
+            <!-- <li id="minus">Cash <span>-&#8377;400</span> <i class="far fa-window-close fa-2x"></i></li> -->
+        </ul>
+        <h3>Add New Transaction</h3>
+        <form id="form">
+            <div class="form-control">
+                <label for="test">Text</label>
+                <input type="text" id="text" placeholder="Enter Text...">
+            </div>
+            <div class="form-control">
+                <label for="amount">Amount (negative - expense, positive - income)</label>
+                <input type="number" id="amount" placeholder="Enter Amount...">
+            </div>
+            <button class="btn" id="btn-add">Add transaction</button>
+        </form>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
